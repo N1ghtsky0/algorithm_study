@@ -16,10 +16,10 @@ for k, v in Counter(num).items():
 # print mean
 print(round(sum(num)/len(num))) 
 
-# median
+# print median
 print(num[len(num)//2])
 
-# mode
+# print mode
 result = max(num_count.keys())
 
 # When there are several, the second smallest of the lowest values is output.
