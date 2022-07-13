@@ -1,1 +1,1 @@
-# BJ_coding
+# BOJ_coding
