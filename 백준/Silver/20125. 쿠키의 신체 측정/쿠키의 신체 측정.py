@@ -1,3 +1,5 @@
+from sys import stdin
+
 def down(i, j):
     length = 1
     while i+1 < N and MAP[i+1][j] == '*':
@@ -6,7 +8,7 @@ def down(i, j):
     return length
 
 N = int(input())
-MAP = [input() for _ in ' ' * N]
+MAP = [stdin.readline().rstrip() for _ in ' ' * N]
 ans = ""
 
 x, y = 0, 0
