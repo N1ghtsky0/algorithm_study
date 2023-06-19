@@ -1,12 +1,14 @@
 from collections import Counter
-from itertools import combinations
+from sys import stdin
+
+rd = stdin.readline
 
 def psychological_distance(mbti1, mbti2):
     return sum([n != m for n, m in zip(mbti1, mbti2)])
 
 for t in range(int(input())):
-    N = int(input())
-    MBTI = list(input().split())
+    N = int(rd().rstrip())
+    MBTI = list(rd().rstrip().split())
     if max(Counter(MBTI).values()) >= 3:
         print(0)
     else:
