@@ -1,0 +1,5 @@
+N = int(input())
+sizes = list(map(int, input().split()))
+T, P = map(int, input().split())
+print(sum([size//T + ((size % T) > 0) for size in sizes]))
+print(N//P, N % P)
